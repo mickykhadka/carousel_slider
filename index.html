@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
+
+    <title>CAROUSEL | SLIDER</title>
+    <style>
+      img {
+        height: 333px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="display-4 text-center">JS SLIDER</h1>
+    <div class="container d-flex justify-content-center">
+      <span
+        data-toggle="tooltip"
+        data-placement="right"
+        title="This button has shadow also!"
+      >
+        <button
+          class="btn bg-info btn-lg py-5 px-2 shadow-lg"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          Launch Gallery
+        </button>
+      </span>
+
+      <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Hello world</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- carousel here -->
+              <div class="container">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-10">
+                    <div
+                      id="modalCarousel"
+                      class="carousel slide"
+                      data-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="https://images.unsplash.com/photo-1594995297377-b4e91695313e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="d-block w-100"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://images.unsplash.com/photo-1595095650036-adbd2b88bbd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="d-block w-100"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="https://images.unsplash.com/photo-1595068777060-919b9811d74a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            class="d-block w-100"
+                          />
+                        </div>
+                      </div>
+                      <a
+                        class="carousel-control-prev"
+                        href="#modalCarousel"
+                        data-slide="prev"
+                      >
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a
+                        class="carousel-control-next"
+                        href="#modalCarousel"
+                        data-slide="next"
+                      >
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-success">
+                Cool!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
